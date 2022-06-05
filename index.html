@@ -1,9 +1,91 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My cool website</title>
+        <title>Russell's Board Games Party</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas-Neue">
+        <style>
+            body {
+                font-family: 'Montserrat';
+                display: block;
+                background-color: #f7a716a6;
+                margin: 20px;
+            }
+            .title {
+                font-family: 'Bebas-Neue';
+            }
+            .c {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 60%;
+                border: dotted red 4px;
+            }
+            .q {
+                margin-top: 4px;
+                display: block;
+                font-weight: bold;
+                font-size: larger;
+            }
+            .a {
+                display: block;
+                font-size: large;
+            }
+            .date {
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            let nextParty = () => {
+                var now = new Date();
+                var iter = new Date(now.getFullYear(), now.getMonth(), 0);
+                var skipDays = 3;
+                while (skipDays > 0) {
+                    iter.setDate(iter.getDate()+1)
+                    if (iter.getDay() == 6 /*Saturday*/) {
+                        skipDays -= 1;
+                    }
+                }
+                return iter.toDateString();
+            }
+            
+        </script>
     </head>
     <body>
-        Hello World!
+        <div class="c">
+            <h1 class="title">It's A Party And You're Invited!</h1>
+            <h2>Russell is hosting board game parties!</h2>
+            <div>
+                <ul>
+                    <li>
+                        <span class="q">What is it?</span>
+                        <span class="a">A time of fellowship and board games!</span>
+                    </li>
+                    <li>
+                        <span class="q">When is it?</span>
+                        <span class="a">Third Saturday of every month from 1-6pm</span>
+                        <span class="a">Next party is <span class="date"><script>document.write(nextParty())</script></span></span>
+                    </li> 
+                    <li>
+                        <span class="q">Where is it?</span>
+                        <span class="a">Russell's condo in Cloverly Village</span>
+                        <span class="a">Email Russell for specific address</span>
+                    </li>
+                    <li>
+                        <span class="q">Who is it for?</span>
+                        <span class="a">Russell's friends, family, neighbors and friends of friends. of all ages and locations (campus, city, and accompanied kids) who love playing board games and making friends!</span>
+                    </li> 
+                    <li>
+                        <span class="q">What do I need to do?</span>
+                        <span class="a">Bring yourself, a friend, a game, and/or a snack.</span>
+                        <span class="a">RSVPs are appreciated! Let me know you're planning to come and stay informed if plans change by sending an email to <script>document.write('<a href="mai' + 'lto:Russell' + 'Champ@g' + 'mai' + 'l.com">Russell' + 'Champ@gm' + 'ail.' + 'com' + '</a>')</script>.</span>
+                        <span class="a">You can also visit the <a href="https://discord.com/invite/XvBTQXdhcN">New Life Socialites" Discord</a> server to chit chat!</span>
+                    </li> 
+                    <li>
+                        (Best parking is available either along Champagne Dr or in the lot across Ellsworth Rd.)
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
