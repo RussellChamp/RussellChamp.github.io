@@ -1,0 +1,20 @@
+index.html
+  s_96432dc9da84a2::t_3bc8d2591faf96 283-286,295-296
+  s_96432dc9da84a2::t_02063417dd8afb 255-257,259-264
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fdf79c85bd4d32657b7fe7b15376ba8a44af16d1",
+  "prompts": {},
+  "sessions": {
+    "s_96432dc9da84a2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_e52ad2952ffeqiOIq9EOItDB3h",
+        "model": "unknown"
+      },
+      "human_author": "Russell Champoux <Russell.Champoux@coupa.com>"
+    }
+  }
+}
