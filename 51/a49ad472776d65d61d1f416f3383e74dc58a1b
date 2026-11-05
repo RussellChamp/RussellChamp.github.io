@@ -1,0 +1,19 @@
+index.html
+  s_bfad1f62c62e48::t_da4a262c4c2b08 103,195,241,256,258-259,267-270,288-291,316,320
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "51a49ad472776d65d61d1f416f3383e74dc58a1b",
+  "prompts": {},
+  "sessions": {
+    "s_bfad1f62c62e48": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "04b3dcbb-976b-4c9c-80c2-ab6ac4d899c2",
+        "model": "unknown"
+      },
+      "human_author": "Russell Champoux <Russell.Champoux@coupa.com>"
+    }
+  }
+}
